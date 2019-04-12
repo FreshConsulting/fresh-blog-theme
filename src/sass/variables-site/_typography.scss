@@ -1,4 +1,7 @@
-$font__main: sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$font__main: 'Montserrat',sans-serif;
+$font__secondary: 'Open Sans', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

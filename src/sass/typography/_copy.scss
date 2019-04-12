@@ -1,5 +1,7 @@
 p {
 	margin-bottom: 1.5em;
+	font-family: $font__secondary;
+	@include font-size(1)
 }
 
 dfn, cite, em, i {
