@@ -16,6 +16,7 @@ T
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# StyleGuide
 # Typography
 # Elements
 # Forms
@@ -3144,6 +3145,18 @@ template {
   display: none; }
 
 /*--------------------------------------------------------------
+# Style Guide
+--------------------------------------------------------------*/
+.styleguide {
+  padding: 100px 0; }
+  .styleguide__header {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f1f1f1;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 body,
@@ -3160,32 +3173,6 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
-
-h1 {
-  font-weight: bold;
-  font-size: 64px;
-  font-size: 4rem; }
-
-h2 {
-  font-weight: bold;
-  font-size: 36px;
-  font-size: 2.25rem; }
-
-h3 {
-  font-weight: bold;
-  font-size: 28px;
-  font-size: 1.75rem;
-  font-size: 28px; }
-
-h4 {
-  font-weight: bold;
-  font-size: 24px;
-  font-size: 1.5rem; }
-
-h5 {
-  font-weight: bold;
-  font-size: 18px;
-  font-size: 1.125rem; }
 
 h6 {
   font-size: 16px;
@@ -3233,6 +3220,37 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+.heading-one, h1 {
+  font-size: 64px;
+  font-size: 4rem;
+  line-height: 1.15;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.heading-two, h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.heading-three, h3 {
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.heading-four, h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.heading-five, h5 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif; }
 
 /*--------------------------------------------------------------
 # Elements

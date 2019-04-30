@@ -13,3 +13,34 @@ textarea {
 @import "headings";
 
 @import "copy";
+
+.heading-one {
+	@include font-size(4);
+	line-height: 1.15;
+	font-family: $font__main;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.heading-two {
+	@include font-size(2.25);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.heading-three {
+	@include font-size(1.75);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.heading-four {
+	@include font-size(1.5);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.heading-five {
+	@include font-size(1.125);
+	font-family: $font__secondary;
+}

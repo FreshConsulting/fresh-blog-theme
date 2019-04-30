@@ -3,29 +3,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-weight: bold;
-	@include font-size(4);
+	@extend .heading-one;
 }
 
 h2 {
-	font-weight: bold;
-	@include font-size(2.25);
+	@extend .heading-two;
 }
 
 h3 {
-	font-weight: bold;
-	@include font-size(1.75);
-	font-size: 28px;
+	@extend .heading-three;
 }
 
 h4 {
-	font-weight: bold;
-	@include font-size(1.5);
+	@extend .heading-four;
 }
 
 h5 {
-	font-weight: bold;
-	@include font-size(1.125);
+	@extend .heading-five;
 }
 
 h6 {
