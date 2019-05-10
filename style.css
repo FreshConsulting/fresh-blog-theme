@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 /*!
 Theme Name: Fresh Blog
 Theme URI: https://www.freshconsulting.com
@@ -20,6 +20,7 @@ T
 # Typography
 # Elements
 # Forms
+	## Buttons
 # Navigation
 	## Links
 	## Menus
@@ -39,7 +40,7 @@ T
 /* Cyan*/
 /* Red */
 .bg-gray {
-  background: #2E333E; }
+  background-color: #2E333E; }
 
 .bg-gray-light {
   background-color: #BFBFBF; }
@@ -3168,7 +3169,7 @@ template {
 .styleguide {
   padding: 100px 0; }
   .styleguide__section {
-    margin: 50px 0; }
+    margin: 100px 0; }
   .styleguide__header {
     padding-bottom: 10px;
     margin-bottom: 30px;
@@ -3334,32 +3335,42 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
+.button, button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
+  font-size: 16px;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.9em 2em;
+  border-radius: 5px;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
   background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  color: #2E333E;
   line-height: 1;
-  padding: .6em 1em .4em; }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa; }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb; }
+  transition: 0.3s background-color, 0.3s color; }
+  .button--cyan, button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    background-color: #38918B;
+    color: #fff; }
+    .button--cyan:hover, button:hover,
+    input:hover[type="button"],
+    input:hover[type="reset"],
+    input:hover[type="submit"], .button--cyan:active, button:active,
+    input:active[type="button"],
+    input:active[type="reset"],
+    input:active[type="submit"], .button--cyan:focus, button:focus,
+    input:focus[type="button"],
+    input:focus[type="reset"],
+    input:focus[type="submit"] {
+      background-color: #86BDB9;
+      color: #fff;
+      cursor: pointer; }
 
 input[type="text"],
 input[type="email"],
@@ -3406,6 +3417,46 @@ textarea {
   width: 100%; }
 
 /*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.button, button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  font-size: 16px;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.9em 2em;
+  border-radius: 5px;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  background: #e6e6e6;
+  color: #2E333E;
+  line-height: 1;
+  transition: 0.3s background-color, 0.3s color; }
+  .button--cyan, button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    background-color: #38918B;
+    color: #fff; }
+    .button--cyan:hover, button:hover,
+    input:hover[type="button"],
+    input:hover[type="reset"],
+    input:hover[type="submit"], .button--cyan:active, button:active,
+    input:active[type="button"],
+    input:active[type="reset"],
+    input:active[type="submit"], .button--cyan:focus, button:focus,
+    input:focus[type="button"],
+    input:focus[type="reset"],
+    input:focus[type="submit"] {
+      background-color: #86BDB9;
+      color: #fff;
+      cursor: pointer; }
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -3413,25 +3464,12 @@ textarea {
 --------------------------------------------------------------*/
 a {
   color: royalblue; }
-  a:visited {
-    color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
-
-.btn,
-.button {
-  padding: 12px 25px;
-  background-color: #38918B;
-  color: #fff;
-  border-radius: 5px;
-  transition: all 1s ease-in-out; }
-  .btn:hover,
-  .button:hover {
-    background-color: #86BDB9; }
 
 /*--------------------------------------------------------------
 ## Menus

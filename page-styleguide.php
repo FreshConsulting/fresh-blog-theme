@@ -44,6 +44,13 @@ get_header();
 				</div>
 				<!-- End Typography Section -->
 
+				<!-- Button Section -->
+				<div class="styleguide__section">
+					<div class="styleguide__header">Buttons</div>
+					<a href="#nogo" class="button button--cyan">Large Button</a>
+				</div>
+				<!-- End Button Section -->
+
 			</div>
 		</div>
 	</div>

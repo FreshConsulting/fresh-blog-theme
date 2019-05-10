@@ -1,22 +1,35 @@
+.button {
+	@include font-size(1);
+	display: inline-block;
+	padding: 0.9em 2em;
+	border-radius: 5px;
+	border: 0;
+	font-family: $font__secondary;
+	font-weight: bold;
+	text-decoration: none;
+	background: $color__background-button;
+	color: $fresh__gray;
+	line-height: 1;
+	transition: 0.3s background-color, 0.3s color;
+
+	&--cyan {
+		background-color: $fresh__cyan;
+		color: $color__background-body;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $fresh__cyan--light;
+			color: $color__background-body;
+			cursor: pointer;
+		}
+	}
+}
+
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
-	border-radius: 3px;
-	background: $color__background-button;
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6em 1em .4em;
-
-	&:hover {
-		border-color: $color__border-button-hover;
-	}
-
-	&:active,
-	&:focus {
-		border-color: $color__border-button-focus;
-	}
+	@extend .button;
+	@extend .button--cyan;
 }
