@@ -38,6 +38,24 @@ T
 /* Gray */
 /* Cyan*/
 /* Red */
+.bg-gray {
+  background: #2E333E; }
+
+.bg-gray-light {
+  background-color: #BFBFBF; }
+
+.bg-gray-lighter {
+  background-color: #F5F3F4; }
+
+.bg-cyan {
+  background-color: #38918B; }
+
+.bg-cyan-light {
+  background-color: #86BDB9; }
+
+.bg-red {
+  background-color: #FF0044; }
+
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -3149,12 +3167,17 @@ template {
 --------------------------------------------------------------*/
 .styleguide {
   padding: 100px 0; }
+  .styleguide__section {
+    margin: 50px 0; }
   .styleguide__header {
     padding-bottom: 10px;
     margin-bottom: 30px;
     border-bottom: 1px solid #f1f1f1;
     text-transform: uppercase;
     font-weight: bold; }
+  .styleguide__color-block {
+    width: 130px;
+    height: 130px; }
 
 /*--------------------------------------------------------------
 # Typography
