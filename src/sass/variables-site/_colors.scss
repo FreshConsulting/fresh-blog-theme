@@ -37,5 +37,27 @@ $fresh__cyan--light: #86BDB9;
 
 $fresh__red: #FF0044;
 
+// Semantic Use
+.bg-gray {
+  background-color: $fresh__gray;
+}
 
+.bg-gray-light {
+  background-color: $fresh__gray-light;
+}
 
+.bg-gray-lighter {
+  background-color: $fresh__gray-lighter;
+}
+
+.bg-cyan {
+  background-color: $fresh__cyan;
+}
+
+.bg-cyan-light {
+  background-color: $fresh__cyan--light;
+}
+
+.bg-red {
+  background-color: $fresh__red;
+}
