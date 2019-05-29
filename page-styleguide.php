@@ -58,18 +58,18 @@ get_header();
 							<div class="styleguide__header">Cards</div>
 						</div>
 						<div class="col-sm-4">
-							<div class="card">
+							<a href="#nogo" class="card">
 								<picture class="card__picture img-fluid">
 									<source srcset="https://www.fillmurray.com/g/600/300"
 													media="(max-width: 767px)">
 									<img src="https://www.fillmurray.com/g/600/300" class="card__image img-fluid" />
 								</picture>
 								<div class="card__content-wrapper">
-									<div class="card__title">Foo Bar</div>
+									<div class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
 									<div class="card__date">July, 18th 2020</div>
 									<div class="card__body">Body style 1 Georgia Regular 18px. ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum, nibh pellentesque vestibulum...</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
