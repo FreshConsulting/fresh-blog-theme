@@ -43,4 +43,5 @@ textarea {
 .heading-five {
 	@include font-size(1.125);
 	font-family: $font__secondary;
+	text-transform: uppercase;
 }
