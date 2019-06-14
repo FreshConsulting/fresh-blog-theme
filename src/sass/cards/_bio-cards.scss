@@ -1,0 +1,28 @@
+.bio-card {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: $fresh__gray;
+  background-color: $color__background-body;
+  transition: transform 0.3s ease;
+
+  &__image {
+    width: 163px;
+    height: 163px;
+    margin-right: 50px;
+    border-radius: 100%;
+  }
+
+  &__title {
+    @extend .heading-three;
+
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    // @extend .heading-five;
+  }
+}
