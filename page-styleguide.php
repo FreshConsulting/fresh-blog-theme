@@ -107,6 +107,18 @@ get_header();
 		</section>
 	</div>
 	<!-- End Hero Section -->
+				<!-- Input Section -->
+				<div class="styleguide__section">
+					<div class="styleguide__header">Inputs</div>
+					.
+					<input class="" type="text" value="Some text" placeholder="placeholder text">
+					<textarea name="" id="" cols="10" rows="5"></textarea>
+				</div>
+				<!-- End Input Section -->
+
+			</div>
+		</div>
+	</div>
 </div>
 
 <?php
