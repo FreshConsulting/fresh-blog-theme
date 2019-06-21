@@ -14,13 +14,26 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: $color__text-input;
-	border: 1px solid $color__border-input;
-	border-radius: 3px;
-	padding: 3px;
+	width: 100%;
+	padding: 11px 25px;
+	font-family: $font__secondary;
+	color: $color__text-input-focus;
+	border: 2px solid $color__border-input;
+	border-radius: 5px;
 
 	&:focus {
-		color: $color__text-input-focus;
+		border: 2px solid $fresh__cyan--light;
+		outline: none;
+	}
+
+	&:disabled {
+		color: $color__text-input-disabled;
+		border: 2px solid $fresh__gray-lighter;
+		background-color: $fresh__gray-lighter;
+	}
+
+	&::placeholder {
+		color: $color__text-input;
 	}
 }
 
@@ -28,6 +41,29 @@ select {
 	border: 1px solid $color__border-input;
 }
 
-textarea {
-	width: 100%;
+input[type="search"] {
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration {
+		display: none;
+	}
+}
+
+// Wrappers
+.input-field {
+	display: flex;
+	flex-direction: column;
+
+	&--error {
+		input,
+		input:focus {
+			border: 2px solid $fresh__red;
+		}
+
+		span {
+			font-size: 12px;
+			color: $fresh__red;
+		}
+	}
 }

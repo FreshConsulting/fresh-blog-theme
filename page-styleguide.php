@@ -110,9 +110,37 @@ get_header();
 				<!-- Input Section -->
 				<div class="styleguide__section">
 					<div class="styleguide__header">Inputs</div>
-					.
-					<input class="" type="text" value="Some text" placeholder="placeholder text">
-					<textarea name="" id="" cols="10" rows="5"></textarea>
+
+					<div class="mb-5">
+						<div class="row">
+							<div class="col-12 col-md-4">
+								<input type="text" placeholder="placeholder text">
+							</div>
+							<div class="col-12 col-md-4">
+								<input type="text" value="Some text" placeholder="placeholder text" autofocus>
+							</div>
+							<div class="col-12 col-md-4">
+								<div class="input-field input-field--error">
+									<input class="mb-1" type="text" value="Some text" placeholder="placeholder text">
+									<span>Error State Message</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mb-5">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<input type="text" value="Some text" placeholder="placeholder text" disabled="disabled">
+							</div>
+							<div class="col-12 col-md-6">
+								<input type="search" placeholder="Search...">
+							</div>
+						</div>
+					</div>
+
+					<textarea cols="10" rows="5"></textarea>
+
 				</div>
 				<!-- End Input Section -->
 
