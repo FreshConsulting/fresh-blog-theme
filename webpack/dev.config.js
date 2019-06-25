@@ -15,7 +15,7 @@ module.exports = merge(baseConfig, {
           './*.php',
           './js/*.js'
         ],
-        proxy: 'https://freshblogtheme.test/',// change this to your current URL
+        proxy: 'http://fresh-blog.theme',// change this to your current URL
         notify: true
       })
     ]
