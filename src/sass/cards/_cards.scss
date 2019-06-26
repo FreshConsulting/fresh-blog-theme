@@ -1,0 +1,54 @@
+.card {
+  display: block;
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: $fresh__gray;
+  background-color: $color__background-body;
+  transition: transform 0.3s ease;
+
+  &--link {
+    &:after {
+      z-index: 1;
+      opacity: 0;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 6px 1em 0.5em rgba(0, 0, 0, 0.1);
+      transition: opacity 0.5s ease;
+    }
+
+    &:hover,
+    &:focus {
+      transform: translate3d(0, -1em, 0);
+      transition: transform 0.3s ease,;
+      color: $fresh__gray;
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__content-wrapper {
+    padding: 30px;
+  }
+
+  &__title {
+    @extend .heading-five;
+
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    margin-bottom: 10px;
+    color: $fresh__gray-light;
+  }
+
+  &__body {
+    line-height: 1.9;
+  }
+}

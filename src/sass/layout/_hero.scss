@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $fresh__gray;
+    opacity: 0.5;
+    content: '';
+  }
+
+  &__content-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vw * (300 / 768));
+    color: $color__background-body;
+
+    @include media-breakpoint-up(xl) {
+      max-height: 800px;
+      height: calc(100vw * (500 / 1440));
+    }
+  }
+
+  .bio-card {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 750px;
+    width: 100%;
+    top: calc(100vw * (300 / 768));
+
+    @include media-breakpoint-up(sm) {
+      top: calc(100vw * (300 / 768) - 50px);
+    }
+
+    @include media-breakpoint-up(xl) {
+      top: calc(100vw * (500 / 1440) - 50px);
+    }
+  }
+}
