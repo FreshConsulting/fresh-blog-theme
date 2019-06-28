@@ -23,7 +23,7 @@ Getting Started
 * cd /wp-content/themes/fresh-starter-theme
 * yarn
 * yarn dev (for development)
-* yarn dev (for production)
+* yarn build (for production)
 * change proxy url to match your local dev url in /webpack/dev.config.js
 
 `Requirements`
