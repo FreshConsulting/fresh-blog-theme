@@ -1,8 +1,13 @@
 .hero {
   position: relative;
   width: 100%;
+  margin-bottom: 300px;
   background-size: cover;
   background-position: center center;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 250px;
+  }
 
   &::before {
     position: absolute;

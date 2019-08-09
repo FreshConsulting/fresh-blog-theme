@@ -10,10 +10,15 @@
   transition: transform 0.3s ease;
 
   &__image {
-    width: 163px;
-    height: 163px;
+    width: 100px;
+    height: 100px;
     margin-right: 50px;
     border-radius: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 163px;
+      height: 163px;
+    }
   }
 
   &__title {
@@ -23,6 +28,9 @@
   }
 
   &__description {
-    // @extend .heading-five;
+    display: -webkit-box;
+    max-height: 72px;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
   }
 }
