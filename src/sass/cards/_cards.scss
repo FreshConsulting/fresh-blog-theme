@@ -6,6 +6,8 @@
   color: $fresh__gray;
   background-color: $color__background-body;
   transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  padding: 0 20px;
 
   &--link {
     &:after {
