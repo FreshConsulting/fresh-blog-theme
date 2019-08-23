@@ -1,0 +1,44 @@
+.fresh_author_widget {
+  &__author-title {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent;
+      bottom: -5px;
+      left: 50%;
+      border-top-color: #313131;
+      border-width: 6px;
+      border-bottom: 0;
+      margin-left: -6px;
+      z-index: 5;
+      position: absolute;
+    }
+  }
+
+  &__author-name {
+    text-align: center;
+
+    p {
+      padding-bottom: 10px;
+      display: inline-block;
+      border-bottom: 2px solid #313131;
+    }
+  }
+
+  &__author-description {
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+}

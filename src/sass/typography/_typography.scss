@@ -4,43 +4,46 @@ input,
 select,
 optgroup,
 textarea {
-	color: $color__text-main;
-	font-family: $font__main;
-	@include font-size(1);
-	line-height: $font__line-height-body;
+  color: $color__text-main;
+  font-family: $font__main;
+  @include font-size(1);
+  line-height: $font__line-height-body;
 }
 
 @import "headings";
 
 @import "copy";
+body {
+  color: #000;
+}
 
 .heading-one {
-	@include font-size(4);
-	line-height: 1.15;
-	font-family: $font__main;
-	font-weight: bold;
-	text-transform: uppercase;
+  @include font-size(4);
+  line-height: 1.15;
+  font-family: $font__main;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .heading-two {
-	@include font-size(2.25);
-	font-weight: bold;
-	text-transform: uppercase;
+  @include font-size(2.25);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .heading-three {
-	@include font-size(1.75);
-	font-weight: bold;
+  @include font-size(1.75);
+  font-weight: bold;
 }
 
 .heading-four {
-	@include font-size(1.5);
-	font-weight: bold;
-	text-transform: uppercase;
+  @include font-size(1.5);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .heading-five {
-	@include font-size(1.125);
-	font-family: $font__secondary;
-	text-transform: uppercase;
+  @include font-size(1.125);
+  font-family: $font__secondary;
+  text-transform: uppercase;
 }
