@@ -142,6 +142,12 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+
+/**
+ * Customizer
+ */
+require get_template_directory() . '/inc/widgets.php';
+
 /**
  * Load Jetpack compatibility file.
  */
