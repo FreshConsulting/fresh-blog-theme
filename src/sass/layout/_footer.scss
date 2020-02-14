@@ -7,4 +7,20 @@
   a {
     color: $color__background-body;
   }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    &__item {
+      margin: 0 5px;
+
+      i {
+        font-size: 30px;
+      }
+    }
+
+  }
 }
