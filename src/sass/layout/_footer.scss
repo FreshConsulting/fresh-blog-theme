@@ -15,7 +15,15 @@
     margin-bottom: 20px;
 
     &__item {
-      margin: 0 5px;
+      margin: 0 15px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
 
       i {
         font-size: 30px;
