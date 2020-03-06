@@ -32,7 +32,7 @@ $social_medias = array(
 
                         if ( get_theme_mod( $social_media ) ):
                             ?>
-                            <span class="social-media__item"><a href="<?php echo get_theme_mod( $social_media ); ?>" class="social-meida__link" target="_blank"><i class="fa fa-<?php echo $social_media ?>"></i></a></span>
+                            <span class="social-media__item"><a href="<?php echo get_theme_mod( $social_media ); ?>" class="social-media__link" target="_blank" rel="noopener noreferrer"><i class="fa fa-<?php echo $social_media ?>"></i></a></span>
                         <?php
                         endif;
 
