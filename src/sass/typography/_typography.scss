@@ -4,7 +4,8 @@ input,
 select,
 optgroup,
 textarea {
-  font-family: $fresh__gray;
+  font-family: $font__main;
+  color: $fresh__gray;
   @include font-size(1);
   line-height: $font__line-height-body;
 }
